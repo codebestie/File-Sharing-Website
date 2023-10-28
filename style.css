@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Montez&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+.wrapper {
+  background-color: #0093b4;
+  height: 100vh;
+}
+.container {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.page {
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
+}
+.header {
+  border-radius: 5px 5px;
+  background-image: linear-gradient(to bottom, #fff 0%, #f6f6f6 100%);
+}
+.logo strong {
+  font-family: "Montez", cursive;
+  font-size: 20px;
+}
+.profile {
+  font-size: 24px;
+}
+.text:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  color: #d8d8d8;
+  width: 0;
+  height: 30px;
+  border-left: 1px solid #e1e5e6;
+  position: relative;
+  left: 1px;
+  margin: 0 15px;
+}
+a,
+.text {
+  font-weight: 600;
+  color: #0093b4;
+  cursor: pointer;
+}
+.text,
+.profile:hover {
+  color: #000;
+}
+
+.intro h1 {
+  line-height: 1.2em;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* Center the input and label vertically and horizontally*/
+.input-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* style the file input element*/
+.input-center input[type="file"] {
+  display: none; /* Hide the default file input*/
+}
+
+.custom-file-lab {
+  cursor: pointer;
+  transition: all ease 0.2s;
+}
+
+@media screen and (min-width: 480px) {
+  .header {
+    line-height: 39px;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .header {
+    padding: 20px 30px;
+  }
+  .content {
+    padding: 30px 35px;
+  }
+  .intro {
+    padding: calc(10% + 30px) calc(10% + 35px);
+    text-align: center;
+  }
+  .intro h1 {
+    font-size: 50px;
+  }
+}
+
+@media screen and (min-width: 639px) {
+  .intro {
+    padding: calc(5% + 20px) calc(5% + 10px);
+    text-align: center;
+  }
+}
+
+.cp-text {
+  color: rgba(0, 0, 0, 0.7);
+  text-shadow: 0 1px rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
